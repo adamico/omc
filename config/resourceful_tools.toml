@@ -1,0 +1,112 @@
+#Chance of anvil taking damage on use. [0.0 - 1.0, default: 0.0]
+#Range: 0.0 ~ 1.0
+anvil_damage_chance = 0.0
+#Copper Tool Durability [250-3000, default: 525]
+#Range: 1 ~ 512
+copperToolDurability = 128
+#Copper Tool efficiency [1.0-7.0, default: 4.5]
+#Range: 0.0 ~ 7.0
+copperToolEfficiency = 4.5
+#Copper attack damage [1-40, default: 2.0]
+#Range: 0.0 ~ 40.0
+copperAttackDamage = 2.0
+#Copper tool enchantability [1-30, default: 18]
+#Range: 1 ~ 30
+copperEnchantability = 18
+#Max durability of Iron Hand Scraper
+#Range: 1 ~ 512
+hand_scraper_durability = 250
+#Max durability of Copper Hand Scraper
+#Range: 1 ~ 512
+hand_scraper_copper_durability = 128
+#Chance to drop bone fragment from Gravel with Hand Tiller
+#Range: 0.0 ~ 1.0
+bone_fragment_chance = 0.2
+#Chance to drop ink sac from Clay with Hand Tiller
+#Range: 0.0 ~ 1.0
+ink_sac_chance = 0.2
+#Chance to drop saltpeter from Sandstone with Hand Pick
+#Range: 0.0 ~ 1.0
+saltpeter_chance = 0.2
+#Chance to drop sulfur from Netherrack with Hand Pick
+#Range: 0.0 ~ 1.0
+sulfur_chance = 0.1
+#Chance to drop small pile of blaze powder from Magma block with Hand Pick
+#Range: 0.0 ~ 1.0
+small_blaze_chance = 0.1
+#Chance to drop ghast tear fragment from Nether Quartz block with Hand Pick
+#Range: 0.0 ~ 1.0
+ghast_tear_fragment_chance = 0.1
+#Chance to drop nether star fragment from End Stone with Hand Pick
+#Range: 0.0 ~ 1.0
+nether_star_fragment_chance = 0.01
+#Chance to drop netherite fragment from Blackstone with Hand Pick
+#Range: 0.0 ~ 1.0
+netherite_fragment_chance = 0.05
+#Chance to drop feathers from Spruce Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+feather_chance = 0.15
+#Chance to drop string from Birch Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+string_chance = 0.15
+#Chance to drop apple from Oak Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+apple_chance = 0.25
+#Chance to drop acorn from Oak Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+acorn_chance = 0.01
+#Chance to drop acorn from Dark Oak Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+acorn_dark_chance = 0.01
+#Chance to drop rabbit foot from Acacia Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+rabbit_chance = 0.05
+#Chance to drop spider eye from Jungle Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+spider_eye_chance = 0.1
+#Chance to drop pearl fragment from Dark Oak Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+pearl_fragment_chance = 0.05
+#Chance to drop prismarine crystal from Tall Seagrass with Hand Trimmer
+#Range: 0.0 ~ 1.0
+prismarine_crystal_chance = 0.15
+#Chance to drop prismarine shard from Kelp Plant with Hand Trimmer
+#Range: 0.0 ~ 1.0
+prismarine_shard_chance = 0.15
+#Chance to drop phantom membrane shard from Azela Leaves with Hand Trimmer
+#Range: 0.0 ~ 1.0
+membrane_chance = 0.05
+#Chance to drop eggs from Hay block with Hand Trimmer
+#Range: 0.0 ~ 1.0
+egg_chance = 0.1
+#Chance to drop Bit o' Slime from Rooted Dirt with Tiller
+#Range: 0.0 ~ 1.0
+bit_o_slime_chance = 0.2
+#Chance to drop clams from Sand with Clam Digger
+#Range: 0.0 ~ 1.0
+clam_chance = 0.1
+#Hunger value:
+#Range: 0 ~ 30
+cooked_clam_hunger = 6
+#Saturation value:
+#Range: 0.0 ~ 10.0
+cooked_clam_saturation = 0.8
+#Hunger value:
+#Range: 0 ~ 30
+jerky_hunger = 6
+#Saturation value:
+#Range: 0.0 ~ 10.0
+jerky_saturation = 0.8
+#Hunger value:
+#Range: 0 ~ 30
+acorn_hunger = 7
+#Saturation value:
+#Range: 0.0 ~ 10.0
+acorn_saturation = 0.9
+#Hunger value:
+#Range: 0 ~ 30
+acorn_dark_hunger = 7
+#Saturation value:
+#Range: 0.0 ~ 10.0
+acorn_dark_saturation = 0.9
+

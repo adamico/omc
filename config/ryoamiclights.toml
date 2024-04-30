@@ -1,0 +1,36 @@
+
+[light_sources]
+	entities = true
+	self = true
+	block_entities = true
+	water_sensitive_check = true
+
+	[light_sources.settings]
+
+		[light_sources.settings.entities]
+
+			[light_sources.settings.entities.minecraft]
+				player = true
+				cat = true
+				item = true
+				creeper = true
+				experience_orb = true
+				bat = true
+				zombie = true
+				skeleton = true
+				spider = true
+				enderman = true
+				witch = true
+				husk = true
+				arrow = true
+
+			[light_sources.settings.entities.alexsmobs]
+				cockroach = true
+				fly = true
+				crow = true
+
+			[light_sources.settings.entities.mekanismadditions]
+				baby_creeper = true
+				baby_skeleton = true
+				baby_enderman = true
+

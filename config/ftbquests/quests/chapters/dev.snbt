@@ -1,0 +1,808 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dev"
+	group: ""
+	id: "574AF7BA9A58EC69"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["19B6B2DA98E16046"]
+			description: ["early hopping"]
+			id: "495E7EE1EF93EC9F"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "401B94F123BD9F5F"
+				item: "woodenhopper:wooden_hopper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 0.5d
+			tasks: [{
+				id: "0D1D5463825FC1DB"
+				item: "woodenhopper:wooden_hopper"
+				type: "item"
+			}]
+			x: -1.25d
+			y: -0.25d
+		}
+		{
+			dependencies: ["22FDFC50145C492B"]
+			id: "2683E7D742B6D9E4"
+			rewards: [{
+				count: 6
+				id: "2A0E63E58D1DC45D"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "1576AAF0442863CF"
+				item: { Count: 6b, id: "minecraft:iron_nugget" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2683E7D742B6D9E4"]
+			id: "3BF3D78C1B4D7B81"
+			rewards: [{
+				count: 4
+				id: "21C265296506EB7A"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "14FE1B6834529395"
+				item: { Count: 6b, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"737DCB4E36C8D84D"
+				"34BE8393909869F0"
+			]
+			id: "22FDFC50145C492B"
+			rewards: [{
+				count: 3
+				id: "621419E7B49B12E4"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			tasks: [{
+				id: "21A87A964FAC9E7D"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3BF3D78C1B4D7B81"
+				"24D29BE926E138E5"
+			]
+			id: "44FC882D90D01A3A"
+			rewards: [{
+				id: "15C1AF8E8BCCEA5F"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4552381ECF25383D"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E285126EC1D2A52"]
+			description: ["breaking down the ores"]
+			id: "1FA716AFED45F823"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "54B4D1EAD070A911"
+				item: "mekanism:dust_iron"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 0.5d
+			tasks: [{
+				count: 6L
+				id: "36B94B041852982B"
+				item: { Count: 6b, id: "mekanism:dust_iron" }
+				type: "item"
+			}]
+			x: 1.75d
+			y: -6.25d
+		}
+		{
+			dependencies: [
+				"4CF6C06B32EAA81C"
+				"3BF3D78C1B4D7B81"
+			]
+			id: "1E285126EC1D2A52"
+			rewards: [{
+				id: "65C6C49BEECBC26C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4EACD4F09E40633B"
+				item: {
+					Count: 1b
+					id: "justhammers:stone_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"0ADF77626E1790F7"
+				"615850EA5A694E40"
+			]
+			dependency_requirement: "one_completed"
+			id: "4CF6C06B32EAA81C"
+			rewards: [{
+				count: 4
+				id: "65CFF87785418DF6"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A45B73627115745"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6780031C4EF0567B"]
+			id: "0ADF77626E1790F7"
+			rewards: [{
+				count: 4
+				id: "54510422420C62FE"
+				item: "minecraft:birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F4C8C31B5555A93"
+				item: {
+					Count: 1b
+					id: "resourceful_tools:tree_trimmer_copper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["22FDFC50145C492B"]
+			id: "6780031C4EF0567B"
+			rewards: [{
+				count: 6
+				id: "76633E5149FB3717"
+				item: "create:copper_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "0E60D7761CE979E2"
+				item: "create:copper_nugget"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			id: "737DCB4E36C8D84D"
+			rewards: [{
+				id: "18B89907547E9502"
+				type: "xp"
+				xp: 250
+			}]
+			tasks: [{
+				count: 16L
+				id: "797A49F99605FA5E"
+				item: { Count: 16b, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["22FDFC50145C492B"]
+			id: "24D29BE926E138E5"
+			rewards: [{
+				id: "70EBC82FA6A20E1A"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				count: 3L
+				id: "405165757EDF4FC8"
+				item: { Count: 3b, id: "minecraft:smooth_stone" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "19B6B2DA98E16046"
+			rewards: [{
+				id: "0AD30181ACECCD52"
+				item: "resourceful_tools:acorn"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "7A254D05AB63ACAD"
+				item: { Count: 8b, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["22FDFC50145C492B"]
+			description: ["Regeneration"]
+			id: "7CAFDF1A778B9DC3"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "4EF3036F1663A5A9"
+				item: "minicoal:mini_coal"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 0.5d
+			tasks: [{
+				id: "010AB381563FF869"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: 0.25d
+			y: -3.25d
+		}
+		{
+			dependencies: ["19B6B2DA98E16046"]
+			id: "34BE8393909869F0"
+			rewards: [
+				{
+					id: "6921893449A7F57E"
+					item: "reliquary:glowing_bread"
+					type: "item"
+				}
+				{
+					id: "159C402B8AF32DCF"
+					item: "portablecraftingtable:portable_crafting_table"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6D6634692B0E89B1"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"570D2FF478D4D2F7"
+				"1C8FB3530CB1B141"
+			]
+			id: "0FF3C9B1BD2A7370"
+			rewards: [{
+				count: 16
+				id: "1A145C9A97B24F48"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "5AF05BD1521CA887"
+				item: { Count: 4b, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["525D9702988549FC"]
+			id: "146F89F82A5DF12E"
+			rewards: [{
+				count: 8
+				id: "07BF21D2E005C57A"
+				item: "minecraft:nether_brick"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "788D9CA2547A9390"
+				item: { Count: 4b, id: "minecraft:nether_brick" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BF3D78C1B4D7B81"]
+			id: "570D2FF478D4D2F7"
+			rewards: [{
+				id: "4EC6580EA41E5A9A"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31C340277604B927"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"487DEF351A0BEAE9"
+				"0C3C0AA1E9923FB0"
+			]
+			id: "1C8FB3530CB1B141"
+			rewards: [{
+				count: 8
+				id: "2CA087FD013AA1E6"
+				item: "minecraft:coarse_dirt"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0AA75685527B4307"
+				item: "minecraft:coarse_dirt"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			id: "487DEF351A0BEAE9"
+			rewards: [{
+				id: "0EEBCF3552CC432C"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				count: 2L
+				id: "23332E5FF87AA4E2"
+				item: { Count: 2b, id: "minecraft:gravel" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			id: "0C3C0AA1E9923FB0"
+			rewards: [{
+				count: 16
+				id: "4B376E57E3482AFF"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "16FFA250855F95BF"
+				item: { Count: 4b, id: "minecraft:dirt" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			id: "525D9702988549FC"
+			rewards: [{
+				id: "7A8B2FFE59C942D5"
+				type: "xp"
+				xp: 1000
+			}]
+			tasks: [{
+				count: 4L
+				id: "73449BA5703FEA54"
+				item: { Count: 4b, id: "minecraft:netherrack" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			id: "0DE7D2E9F0F5A71F"
+			rewards: [{
+				id: "751667E8F0075769"
+				item: {
+					Count: 1b
+					id: "resourceful_tools:hand_scraper_copper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 9L
+				id: "1890D202F88EBBB9"
+				item: "minecraft:bamboo"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0DE7D2E9F0F5A71F"
+				"18E6B9AFDC584953"
+			]
+			dependency_requirement: "one_completed"
+			id: "6795F197CB2BCC4C"
+			rewards: [{
+				count: 3
+				id: "32BE7C2AA96C5142"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6103C60C1588591F"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6795F197CB2BCC4C"
+				"750F2D83A6CC4E9B"
+			]
+			id: "16B6AC528711E166"
+			rewards: [{
+				count: 4
+				id: "7552EAAE6053904D"
+				item: "travelersbackpack:blank_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "15E836319BBDD7CB"
+				item: {
+					Count: 1b
+					id: "travelersbackpack:standard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			id: "69F37B0D1A6B8E81"
+			rewards: [{
+				id: "2C82938204FBC379"
+				type: "xp"
+				xp: 500
+			}]
+			tasks: [{
+				count: 12L
+				id: "7D3DC0B1346D0C16"
+				item: { Count: 4b, id: "minecraft:sand" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55C2E1E6768541A6"]
+			id: "1A058F2BB0FE531F"
+			tasks: [{
+				id: "2ED3B4418D236AB5"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			id: "19A4160C80967527"
+			tasks: [{
+				id: "1875A3C0BCFE6E52"
+				item: "chunkbychunk:worldfragment"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			id: "3317D60E19142AB8"
+			tasks: [{
+				id: "4720F2D849066396"
+				item: "chunkbychunk:worldshard"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			id: "10A98EE258C8556A"
+			tasks: [{
+				id: "2FAE6FD3C5FBBCF3"
+				item: "chunkbychunk:worldcore"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "2B25FA0B82C0BED0"
+			tasks: [{
+				id: "1F98E2068BE05911"
+				item: "chunkbychunk:worldcrystal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			id: "52171AB55B2E9025"
+			tasks: [{
+				id: "2B33A3FF4B497635"
+				item: "chunkbychunk:chunkspawner"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			id: "2C8204CAE928311C"
+			tasks: [{
+				id: "639ACE1B71FF96FC"
+				item: "chunkbychunk:worldforge"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2683E7D742B6D9E4"]
+			id: "615850EA5A694E40"
+			rewards: [{
+				count: 4
+				id: "0FB8A73FE404FB4F"
+				item: "minecraft:birch_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56509BA7AD01ED9A"
+				item: {
+					Count: 1b
+					id: "resourceful_tools:tree_trimmer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			id: "18E6B9AFDC584953"
+			rewards: [{
+				count: 8
+				id: "492C662B70E86B16"
+				item: "minecraft:rotten_flesh"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "7BEA5FBB49567B2D"
+				item: { Count: 16b, id: "minecraft:rotten_flesh" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"56F9082037893F9E"
+				"61D949DCFB981742"
+			]
+			id: "74D13D4566E784CE"
+			tasks: [{
+				id: "2D2826BC3AD2CC4B"
+				item: "roguelitestorage:safe"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			id: "56F9082037893F9E"
+			rewards: [{
+				count: 2
+				id: "27D5B4AD1645432B"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "769D38880EF93542"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"1A8C37D3175690BF"
+				"6AAC54D93EEF0FFC"
+			]
+			id: "0911DC760C1038AF"
+			tasks: [{
+				id: "7B8AE956E955C4AB"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1686A0A628EA2FC4"]
+			id: "1A8C37D3175690BF"
+			tasks: [{
+				count: 3L
+				id: "328313006B1AAD7E"
+				item: { Count: 3b, id: "minecraft:deepslate" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"107C6F222F834FD5"
+				"4298A9411D972615"
+			]
+			id: "6AAC54D93EEF0FFC"
+			tasks: [{
+				count: 3L
+				id: "41B8068A714EC402"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			id: "1686A0A628EA2FC4"
+			tasks: [{
+				id: "7391C0355AE9E833"
+				item: "minecraft:cobbled_deepslate"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5EAB270728180731"
+				"1A8C37D3175690BF"
+			]
+			id: "107C6F222F834FD5"
+			tasks: [{
+				id: "542EE987F04C5FBA"
+				item: "minecraft:grindstone"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["69F37B0D1A6B8E81"]
+			id: "750F2D83A6CC4E9B"
+			tasks: [{
+				count: 12L
+				id: "5299D01B9CCD097B"
+				item: { Count: 12b, id: "minecraft:glass" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5EAB270728180731"]
+			id: "4298A9411D972615"
+			tasks: [{
+				id: "77503E0B2D52D400"
+				item: {
+					Count: 1b
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["487DEF351A0BEAE9"]
+			id: "5EAB270728180731"
+			tasks: [{
+				id: "43B949E67DC0EF82"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"55C2E1E6768541A6"
+				"0911DC760C1038AF"
+			]
+			id: "7782B9DCF1529BD9"
+			tasks: [{
+				id: "0208C57E2F0827F7"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0911DC760C1038AF"]
+			id: "55C2E1E6768541A6"
+			rewards: [{
+				count: 4
+				id: "2FE8A786A2D6E0E4"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "7B1255A4D2BA3CD6"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1A058F2BB0FE531F"]
+			id: "61D949DCFB981742"
+			tasks: [{
+				id: "00D8A646B74476F5"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.0d
+		}
+	]
+	title: "dev"
+}
