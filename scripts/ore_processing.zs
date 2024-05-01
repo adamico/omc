@@ -51,7 +51,9 @@ for index, ore in ores {
   oreDustToIngots(ore + "_dust_to_" + ore + "_ingot", <tagManager:items>.tag(<resource:forge:dusts/${ore}>), <item:${ingots[index]}>);
 }
 
-blastFurnace.addRecipe("ctgui/new/blasting/bricks", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.1, 100);
-blastFurnace.addRecipe("ctgui/new/blasting/glass", <item:minecraft:glass>, <tag:items:minecraft:smelts_to_glass>, 0.1, 100);
-blastFurnace.addRecipe("ctgui/new/blasting/nether_brick", <item:minecraft:nether_brick>, <tag:items:forge:netherrack>, 0.1, 100);
+furnace.addRecipe("smelting/bricks", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.1, 200);
+blastFurnace.addRecipe("blasting/bricks", <item:minecraft:brick>, <item:minecraft:clay_ball>, 0.1, 100);
+blastFurnace.addRecipe("blasting/terracotta", <item:minecraft:terracotta>, <item:minecraft:clay>, 0.1, 100);
+blastFurnace.addRecipe("blasting/glass", <item:minecraft:glass>, <tag:items:minecraft:smelts_to_glass>, 0.1, 100);
+blastFurnace.addRecipe("blasting/nether_brick", <item:minecraft:nether_brick>, <tag:items:forge:netherrack>, 0.1, 100);
 
