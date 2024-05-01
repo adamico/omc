@@ -23,6 +23,13 @@
 				witch = true
 				husk = true
 				arrow = true
+				bee = true
+				villager = true
+				slime = true
+				leash_knot = true
+				wandering_trader = true
+				trader_llama = true
+				iron_golem = true
 
 			[light_sources.settings.entities.alexsmobs]
 				cockroach = true
@@ -33,4 +40,19 @@
 				baby_creeper = true
 				baby_skeleton = true
 				baby_enderman = true
+
+			[light_sources.settings.entities.endermanoverhaul]
+				mushroom_fields_enderman = true
+
+			[light_sources.settings.entities.creeperoverhaul]
+				cave_creeper = true
+
+			[light_sources.settings.entities.graveyard]
+				skeleton_creeper = true
+
+			[light_sources.settings.entities.goblintraders]
+				goblin_trader = true
+
+			[light_sources.settings.entities.guardvillagers]
+				guard = true
 

@@ -6,7 +6,7 @@
 		#If advancement toasts are blocked.
 		advancements = true
 		#If recipe toasts are blocked.
-		recipes = false
+		recipes = true
 		#If system toasts are blocked.
 		system = false
 		#If tutorial toasts are blocked.
