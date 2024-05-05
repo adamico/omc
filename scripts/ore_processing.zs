@@ -1,5 +1,6 @@
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.ingredient.IIngredient;
+import crafttweaker.api.ingredient.type.IIngredientEmpty;
 
 import stdlib.List;
 
@@ -44,9 +45,18 @@ var ingots as string[] = [
   "mekanism:ingot_uranium"
 ];
 
+// Tags, however are not IIngredients, so to use IIngredient methods on a Tag, you will need to cast it yourself by doing either:
+// - <tag:items:crafttweaker:pickaxe>.asIIngredient()
+// - <tag:items:crafttweaker:pickaxe> as IIngredient // requires an import for 'crafttweaker.api.ingredient.IIngredient'
+// The script line below will add a recipe that, when crafted, will damage the given element (either a Diamond Pickaxe or an Iron Pickaxe) of the <tag:items:crafttweaker:pickaxe> tag by 2.
+// craftingTable.addShapeless("ingredient_tag_example_recipe", <item:minecraft:cobblestone> * 3, [<item:minecraft:cobblestone_stairs>, <tag:items:crafttweaker:pickaxe>.asIIngredient().transformDamage(2)]);
+
 for index, ore in ores {
   if (ore != "steel") {
-    craftingTable.addShapeless("raw_" + ore, <item:mekanism:dust_${ore}>, [<tagManager:items>.tag(<resource:forge:raw_materials/${ore}>), <item:justhammers:stone_hammer>.anyDamage().transformDamage()]);
+    craftingTable.addShapeless("raw_" + ore, <item:mekanism:dust_${ore}>, [
+      <tagManager:items>.tag(<resource:forge:raw_materials/${ore}>),
+      <tag:items:crafttweaker:hand_picks>.asIIngredient().anyDamage().transformDamage()
+    ]);
   }
   oreDustToIngots(ore + "_dust_to_" + ore + "_ingot", <tagManager:items>.tag(<resource:forge:dusts/${ore}>), <item:${ingots[index]}>);
 }

@@ -1,7 +1,7 @@
 craftingTable.addShapeless("clay_from_coarsed_dirt", <item:minecraft:clay>, [<item:minecraft:water_bucket>.transformReplace(<item:minecraft:bucket>), <item:minecraft:coarse_dirt>]);
-craftingTable.addShapeless("gravel_from_cobblestone", <item:minecraft:gravel>, [<item:minecraft:iron_pickaxe>.anyDamage().transformDamage(), <item:minecraft:cobblestone>]);
-craftingTable.addShapeless("sand_from_gravel", <item:minecraft:sand>, [<item:minecraft:iron_pickaxe>.anyDamage().transformDamage(), <item:minecraft:gravel>]);
-craftingTable.addShapeless("bamboo_from_stick", <item:minecraft:bamboo> * 2, [<item:minecraft:stick>]);
+craftingTable.addShapeless("gravel_from_cobblestone", <item:minecraft:gravel>, [<tag:items:crafttweaker:hand_picks>.asIIngredient().anyDamage().transformDamage(), <item:minecraft:cobblestone>]);
+craftingTable.addShapeless("sand_from_gravel", <item:minecraft:sand>, [<tag:items:crafttweaker:hand_tillers>.asIIngredient().transformDamage(), <item:minecraft:gravel>]);
+craftingTable.addShapeless("bamboo_from_stick", <item:minecraft:bamboo> * 2, [<tag:items:crafttweaker:hand_scrapers>.asIIngredient().transformDamage(), <item:minecraft:stick>]);
 
 craftingTable.addShapeless("flint_from_gravel", <item:minecraft:flint>, [<item:minecraft:gravel> * 3]);
 
