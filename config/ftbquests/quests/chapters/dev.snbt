@@ -25,26 +25,42 @@
 				item: "woodenhopper:wooden_hopper"
 				type: "item"
 			}]
-			x: -1.25d
-			y: -0.25d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["22FDFC50145C492B"]
 			id: "2683E7D742B6D9E4"
 			rewards: [{
-				count: 6
-				id: "2A0E63E58D1DC45D"
-				item: "minecraft:iron_nugget"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "071511F643E8736C"
+				table_id: 7390163244687584451L
+				type: "choice"
 			}]
 			tasks: [{
 				count: 6L
-				id: "1576AAF0442863CF"
-				item: { Count: 6b, id: "minecraft:iron_nugget" }
+				id: "75ABBAAC0263B933"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:copper_nugget"
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_nugget"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			title: "Iron or copper nuggets"
+			x: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2683E7D742B6D9E4"]
@@ -61,8 +77,8 @@
 				item: { Count: 6b, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -81,7 +97,7 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -4.5d
 			y: -2.5d
 		}
 		{
@@ -100,7 +116,7 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			x: 2.5d
+			x: -1.5d
 			y: -2.5d
 		}
 		{
@@ -122,8 +138,8 @@
 				item: { Count: 6b, id: "mekanism:dust_iron" }
 				type: "item"
 			}]
-			x: 1.75d
-			y: -6.25d
+			x: 0.75d
+			y: -3.25d
 		}
 		{
 			dependencies: ["4CF6C06B32EAA81C"]
@@ -134,24 +150,22 @@
 				xp: 100
 			}]
 			tasks: [{
-				id: "4EACD4F09E40633B"
+				id: "78D42BA3ED944C46"
 				item: {
 					Count: 1b
-					id: "justhammers:stone_hammer"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "crafttweaker:hand_picks"
 					}
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.5d
+			title: "Any hand pick"
+			x: 1.5d
+			y: -2.5d
 		}
 		{
-			dependencies: [
-				"0ADF77626E1790F7"
-				"615850EA5A694E40"
-			]
+			dependencies: ["615850EA5A694E40"]
 			dependency_requirement: "one_completed"
 			id: "4CF6C06B32EAA81C"
 			rewards: [{
@@ -165,49 +179,8 @@
 				item: "minecraft:string"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["6780031C4EF0567B"]
-			id: "0ADF77626E1790F7"
-			rewards: [{
-				count: 4
-				id: "54510422420C62FE"
-				item: "minecraft:birch_sapling"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4F4C8C31B5555A93"
-				item: {
-					Count: 1b
-					id: "resourceful_tools:tree_trimmer_copper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -2.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["22FDFC50145C492B"]
-			id: "6780031C4EF0567B"
-			rewards: [{
-				count: 6
-				id: "76633E5149FB3717"
-				item: "create:copper_nugget"
-				type: "item"
-			}]
-			tasks: [{
-				count: 6L
-				id: "0E60D7761CE979E2"
-				item: "create:copper_nugget"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -4.0d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			id: "737DCB4E36C8D84D"
@@ -217,13 +190,19 @@
 				xp: 250
 			}]
 			tasks: [{
-				count: 16L
 				id: "797A49F99605FA5E"
-				item: { Count: 16b, id: "minecraft:cobblestone" }
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:cobblestone)"
+					}
+				}
+				title: "Any #forge:cobblestone"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["22FDFC50145C492B"]
@@ -239,8 +218,8 @@
 				item: { Count: 3b, id: "minecraft:smooth_stone" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			id: "19B6B2DA98E16046"
@@ -251,33 +230,19 @@
 			}]
 			tasks: [{
 				count: 8L
-				id: "7A254D05AB63ACAD"
-				item: { Count: 8b, id: "minecraft:oak_log" }
+				id: "1143A4D223451BC1"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any #minecraft:logs"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["22FDFC50145C492B"]
-			description: ["Regeneration"]
-			id: "7CAFDF1A778B9DC3"
-			optional: true
-			rewards: [{
-				count: 64
-				id: "4EF3036F1663A5A9"
-				item: "minicoal:mini_coal"
-				type: "item"
-			}]
-			shape: "diamond"
-			size: 0.5d
-			tasks: [{
-				id: "010AB381563FF869"
-				item: "minecraft:campfire"
-				type: "item"
-			}]
-			x: 0.25d
-			y: -3.25d
+			x: -7.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["19B6B2DA98E16046"]
@@ -299,7 +264,7 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -6.0d
 			y: -2.5d
 		}
 		{
@@ -317,31 +282,11 @@
 				item: { Count: 4b, id: "minecraft:nether_brick" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -1.0d
+			x: 13.5d
+			y: -4.0d
 		}
 		{
-			dependencies: [
-				"487DEF351A0BEAE9"
-				"0C3C0AA1E9923FB0"
-			]
-			id: "1C8FB3530CB1B141"
-			rewards: [{
-				count: 8
-				id: "2CA087FD013AA1E6"
-				item: "minecraft:coarse_dirt"
-				type: "item"
-			}]
-			tasks: [{
-				count: 4L
-				id: "0AA75685527B4307"
-				item: "minecraft:coarse_dirt"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -1.0d
-		}
-		{
+			dependencies: ["1E285126EC1D2A52"]
 			id: "487DEF351A0BEAE9"
 			rewards: [{
 				id: "0EEBCF3552CC432C"
@@ -354,25 +299,8 @@
 				item: { Count: 2b, id: "minecraft:gravel" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.5d
-		}
-		{
-			id: "0C3C0AA1E9923FB0"
-			rewards: [{
-				count: 16
-				id: "4B376E57E3482AFF"
-				item: "minecraft:dirt"
-				type: "item"
-			}]
-			tasks: [{
-				count: 4L
-				id: "16FFA250855F95BF"
-				item: { Count: 4b, id: "minecraft:dirt" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 0.5d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			id: "525D9702988549FC"
@@ -387,30 +315,19 @@
 				item: { Count: 4b, id: "minecraft:netherrack" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.5d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["470452F3FC2E7057"]
+			dependencies: ["50A1FAC9690A4AED"]
 			id: "0DE7D2E9F0F5A71F"
-			rewards: [{
-				id: "751667E8F0075769"
-				item: {
-					Count: 1b
-					id: "resourceful_tools:hand_scraper_copper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
 			tasks: [{
 				count: 9L
 				id: "1890D202F88EBBB9"
 				item: "minecraft:bamboo"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 3.0d
 			y: 2.0d
 		}
 		{
@@ -428,8 +345,8 @@
 				item: "minecraft:leather"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -452,10 +369,11 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.5d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
+			dependencies: ["4A5BF7B76CEC51A9"]
 			id: "69F37B0D1A6B8E81"
 			rewards: [{
 				id: "2C82938204FBC379"
@@ -468,8 +386,8 @@
 				item: { Count: 4b, id: "minecraft:sand" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["55C2E1E6768541A6"]
@@ -479,7 +397,7 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 10.5d
 			y: -2.5d
 		}
 		{
@@ -489,8 +407,8 @@
 				item: "chunkbychunk:worldfragment"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.5d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			id: "3317D60E19142AB8"
@@ -499,8 +417,8 @@
 				item: "chunkbychunk:worldshard"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.5d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			id: "10A98EE258C8556A"
@@ -509,8 +427,8 @@
 				item: "chunkbychunk:worldcore"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 4.0d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
 			id: "2B25FA0B82C0BED0"
@@ -519,8 +437,8 @@
 				item: "chunkbychunk:worldcrystal"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 2.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			id: "52171AB55B2E9025"
@@ -529,8 +447,8 @@
 				item: "chunkbychunk:chunkspawner"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.0d
+			x: -6.5d
+			y: 4.5d
 		}
 		{
 			id: "2C8204CAE928311C"
@@ -539,8 +457,8 @@
 				item: "chunkbychunk:worldforge"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			x: -5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2683E7D742B6D9E4"]
@@ -552,18 +470,19 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "56509BA7AD01ED9A"
+				id: "3E055562158230D6"
 				item: {
 					Count: 1b
-					id: "resourceful_tools:tree_trimmer"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "crafttweaker:tree_trimmers"
 					}
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			title: "Any hand trimmer"
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -576,8 +495,8 @@
 				item: "roguelitestorage:safe"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.5d
+			x: 12.0d
+			y: -2.5d
 		}
 		{
 			id: "56F9082037893F9E"
@@ -593,8 +512,8 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -7.0d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -612,7 +531,7 @@
 				item: "enderio:primitive_alloy_smelter"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.5d
 			y: -2.5d
 		}
 		{
@@ -630,8 +549,8 @@
 				item: { Count: 3b, id: "minecraft:deepslate" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["107C6F222F834FD5"]
@@ -648,8 +567,8 @@
 				item: "enderio:grains_of_infinity"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -4.0d
+			x: 6.0d
+			y: -2.5d
 		}
 		{
 			id: "1686A0A628EA2FC4"
@@ -663,8 +582,8 @@
 				item: "minecraft:cobbled_deepslate"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.5d
+			x: 4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -677,7 +596,7 @@
 				item: "minecraft:grindstone"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 4.5d
 			y: -2.5d
 		}
 		{
@@ -689,19 +608,22 @@
 				item: { Count: 12b, id: "minecraft:glass" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["487DEF351A0BEAE9"]
+			dependencies: [
+				"487DEF351A0BEAE9"
+				"4A5BF7B76CEC51A9"
+			]
 			id: "5EAB270728180731"
 			tasks: [{
 				id: "43B949E67DC0EF82"
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["55C2E1E6768541A6"]
@@ -711,7 +633,7 @@
 				item: "enderio:alloy_smelter"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.0d
 			y: -2.5d
 		}
 		{
@@ -732,7 +654,7 @@
 				item: "enderio:dark_steel_ingot"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.0d
 			y: -4.0d
 		}
 		{
@@ -743,127 +665,18 @@
 				item: "mekanism:ingot_steel"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 10.5d
 			y: -4.0d
 		}
 		{
-			dependencies: ["3BF3D78C1B4D7B81"]
-			id: "289C110844095864"
-			rewards: [{
-				id: "157D8246D9A52EB3"
-				item: "minecraft:water_bucket"
-				type: "item"
-			}]
-			tasks: [{
-				id: "488909C3C58AFDE8"
-				item: "minecraft:water_bucket"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"1C8FB3530CB1B141"
-				"289C110844095864"
-			]
-			id: "7930BD45E16E2E87"
-			rewards: [{
-				count: 4
-				id: "748D5D4CE87DDEF8"
-				item: "minecraft:clay"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F9C7C8875AB11B0"
-				item: "minecraft:clay"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["19B6B2DA98E16046"]
-			id: "470452F3FC2E7057"
-			rewards: [{
-				id: "433CC98CC505B6ED"
-				type: "xp"
-				xp: 100
-			}]
-			tasks: [{
-				count: 5L
-				id: "22E9D7ADD6974B12"
-				item: { Count: 5b, id: "minecraft:stick" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3BF3D78C1B4D7B81"]
-			id: "5486DDA2305EED72"
-			rewards: [{
-				count: 6
-				id: "541D3E4E2B415FAB"
-				item: "minecraft:iron_nugget"
-				type: "item"
-			}]
-			tasks: [{
-				id: "560AAC2025AAE761"
-				item: {
-					Count: 1b
-					id: "minecraft:iron_pickaxe"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7930BD45E16E2E87"]
-			id: "15DC2AC6724B17B7"
-			rewards: [{
-				id: "7E344AB9DE04CBFF"
-				item: "botanypots:terracotta_botany_pot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "574C2EFCE5FB2D17"
-				item: "botanypots:terracotta_botany_pot"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["76C7FFFEACE1CD36"]
 			id: "7BBE1DC28745DF29"
 			tasks: [{
 				id: "1D48F1A2CD17140F"
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.5d
 			y: -4.0d
-		}
-		{
-			id: "76C7FFFEACE1CD36"
-			rewards: [{
-				count: 3
-				id: "0CC9263405C09AE6"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
-			tasks: [{
-				id: "775F51BAB4D70B25"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
-			x: 8.5d
-			y: -5.5d
 		}
 		{
 			dependencies: ["6795F197CB2BCC4C"]
@@ -890,8 +703,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0232FF1AEF7A5D08"]
@@ -912,8 +725,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.5d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["37F1E8F4AD2E3FDA"]
@@ -943,8 +756,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.75d
-			y: 4.25d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["716798A47185919A"]
@@ -961,8 +774,8 @@
 				item: "farmersdelight:tree_bark"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: -7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["549E263128ED707E"]
@@ -979,8 +792,8 @@
 				item: { Count: 4b, id: "minecraft:paper" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -7.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["19B6B2DA98E16046"]
@@ -1001,8 +814,67 @@
 				item: "farmersdelight:cutting_board"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3BF3D78C1B4D7B81"]
+			id: "31DBE99713DF76E4"
+			shape: "gear"
+			size: 0.5d
+			tasks: [{
+				id: "780909A40A85F566"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -1.75d
+		}
+		{
+			dependencies: ["4CF6C06B32EAA81C"]
+			id: "50A1FAC9690A4AED"
+			rewards: [{
+				id: "22DB90665AE5D67D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "68B3FE9026D990D4"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "crafttweaker:hand_scrapers"
+					}
+				}
+				type: "item"
+			}]
+			title: "Any hand scraper"
+			x: 1.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["4CF6C06B32EAA81C"]
+			id: "4A5BF7B76CEC51A9"
+			rewards: [{
+				id: "5472F6F008B0AB1D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "510A5ABCF4C6022F"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "crafttweaker:hand_tillers"
+					}
+				}
+				type: "item"
+			}]
+			title: "Any hand tiller"
+			x: 1.5d
+			y: -1.0d
 		}
 	]
 	title: "dev"

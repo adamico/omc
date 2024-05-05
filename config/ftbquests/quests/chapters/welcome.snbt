@@ -6,23 +6,86 @@
 	id: "2A226DAF496509EB"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"Welcome to One More Chunk (I gotta generate...)!"
-			"This hardcore mode modpack offers you a unique challenge to go the farthest you can in the vanilla progression."
-			"The world is reduced to 4 initial chunks and you have to rebuild it by using the world forge to create fragments to craft world cores."
-			"Being a hardcore only pack your task is challenging but you can store up to 9 stacks of items into a special Safe which retains the contents between worlds, just as a rogue like game."
-			"Can you get to the end? Can you complete the challenges?"
-		]
-		id: "0DB97ACBBEBAE2C3"
-		tasks: [{
-			id: "515926A952D36FD1"
-			title: "zerzer"
-			type: "checkmark"
-		}]
-		title: "Welcome"
-		x: -3.5d
-		y: -1.5d
-	}]
+	quests: [
+		{
+			description: [
+				"Welcome to One More Chunk (I gotta generate...)!"
+				"This semi-hardcore and roguelike modpack offers you a unique challenge to go the farthest you can in the vanilla progression."
+				""
+				"The world is reduced to 1 chunk only and you have to rebuild it by using the world forge to create fragments to craft world cores."
+				""
+				"Being a semi-hardcore pack means you will eventually die... when you don't have any lives left. Yes, thanks to 3rd Life mod (link) you can die 3 three times before saying goodbye to your world. Don't worry, if you're really attached to your current world, following the questline you will discover how to get more lives. "
+				""
+				"If you don't care about the current world or you can't manage to get more lives you can retrieve some of your stuff when you create a new world. In order to do this you have to craft a special Safe which retains its contents between worlds up to 9 stacks of items, just as a rogue like game."
+				""
+				"Can you get to the end? Can you complete the challenges?"
+			]
+			id: "0DB97ACBBEBAE2C3"
+			tasks: [{
+				id: "515926A952D36FD1"
+				title: "zerzer"
+				type: "checkmark"
+			}]
+			title: "Welcome"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0DB97ACBBEBAE2C3"]
+			id: "2BE053FE27E0573C"
+			tasks: [{
+				id: "27501F4CA183E562"
+				title: "ChunkByChunk"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0DB97ACBBEBAE2C3"]
+			id: "1D35A1475BDBB03C"
+			tasks: [{
+				id: "62A727EAE8D678D8"
+				title: "3rd Life"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0DB97ACBBEBAE2C3"]
+			id: "023E0CEF93853EF8"
+			tasks: [{
+				id: "239C658AC7615CDD"
+				title: "Roguelike Chest"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0DB97ACBBEBAE2C3"]
+			id: "6378AE6115CAF8BB"
+			tasks: [{
+				id: "27C13710FCAA293A"
+				title: "Endgame?"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0DB97ACBBEBAE2C3"]
+			description: ["https://github.com/ixDarkLorD/UltimineAddition/wiki#-entry-index"]
+			id: "56C46E409BF95261"
+			tasks: [{
+				id: "3F9B4B4C87E6C56A"
+				title: "Ultimine hard mode"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+	]
 	title: "Welcome!"
 }

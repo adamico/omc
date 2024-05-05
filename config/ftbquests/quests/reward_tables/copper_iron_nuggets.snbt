@@ -1,0 +1,10 @@
+{
+	id: "668F2250F7C06CC3"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 6, item: "minecraft:iron_nugget" }
+		{ count: 6, item: "create:copper_nugget" }
+	]
+	title: "copper_iron_nuggets"
+}
