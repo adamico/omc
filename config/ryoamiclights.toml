@@ -30,6 +30,7 @@
 				wandering_trader = true
 				trader_llama = true
 				iron_golem = true
+				tropical_fish = true
 
 			[light_sources.settings.entities.alexsmobs]
 				cockroach = true
@@ -49,6 +50,7 @@
 
 			[light_sources.settings.entities.graveyard]
 				skeleton_creeper = true
+				ghoul = true
 
 			[light_sources.settings.entities.goblintraders]
 				goblin_trader = true
